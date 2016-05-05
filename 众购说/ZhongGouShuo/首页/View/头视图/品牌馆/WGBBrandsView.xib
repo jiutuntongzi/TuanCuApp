@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WGBBrandsView">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌馆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oc-qt-Q7f">
+                    <rect key="frame" x="5" y="5" width="60" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="2Ra-eb-YS4"/>
+                        <constraint firstAttribute="width" constant="60" id="e8Q-Gv-GXJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brands" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-rW-Edx">
+                    <rect key="frame" x="65" y="5" width="60" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="OED-yT-jFS"/>
+                        <constraint firstAttribute="width" constant="60" id="pJJ-AC-WYr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.073120085769999996" blue="0.16338054890000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOY-vo-2rX">
+                    <rect key="frame" x="0.0" y="30" width="334" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LE-uh-f6L">
+                            <color key="backgroundColor" red="0.180392161" green="1" blue="0.1019607931" alpha="1" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="GRp-lk-n7p"/>
+                                <constraint firstAttribute="width" id="efX-L4-KFC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="4LE-uh-f6L" firstAttribute="top" secondItem="sOY-vo-2rX" secondAttribute="top" id="4lq-5R-dCH"/>
+                        <constraint firstAttribute="trailing" secondItem="4LE-uh-f6L" secondAttribute="trailing" id="VgU-eb-Trq"/>
+                        <constraint firstAttribute="bottom" secondItem="4LE-uh-f6L" secondAttribute="bottom" id="pOK-lK-5wo"/>
+                        <constraint firstItem="4LE-uh-f6L" firstAttribute="leading" secondItem="sOY-vo-2rX" secondAttribute="leading" id="ura-AF-PKV"/>
+                        <constraint firstAttribute="width" constant="246" id="xP0-Va-ykw"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xP0-Va-ykw"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sOY-vo-2rX" firstAttribute="top" secondItem="DJr-rW-Edx" secondAttribute="bottom" id="2FK-mR-AcX"/>
+                <constraint firstItem="sOY-vo-2rX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4xL-Lq-jUl"/>
+                <constraint firstItem="3Oc-qt-Q7f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="S7n-lC-O9L"/>
+                <constraint firstAttribute="trailing" secondItem="sOY-vo-2rX" secondAttribute="trailing" id="Z4U-pr-4PI"/>
+                <constraint firstItem="DJr-rW-Edx" firstAttribute="leading" secondItem="3Oc-qt-Q7f" secondAttribute="trailing" id="bqH-Eh-ru8"/>
+                <constraint firstAttribute="bottom" secondItem="sOY-vo-2rX" secondAttribute="bottom" id="lXa-sp-7sC"/>
+                <constraint firstItem="sOY-vo-2rX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rXM-hv-Zpg"/>
+                <constraint firstItem="3Oc-qt-Q7f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="tDI-ET-Vrd"/>
+                <constraint firstAttribute="trailing" secondItem="sOY-vo-2rX" secondAttribute="trailing" id="uj7-3O-geq"/>
+                <constraint firstItem="DJr-rW-Edx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="ywk-ss-sZS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4xL-Lq-jUl"/>
+                    <exclude reference="uj7-3O-geq"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="scrollView" destination="sOY-vo-2rX" id="RnO-GC-dws"/>
+                <outlet property="scrollWidth" destination="efX-L4-KFC" id="Kt3-kC-XAk"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="262"/>
+        </view>
+    </objects>
+</document>

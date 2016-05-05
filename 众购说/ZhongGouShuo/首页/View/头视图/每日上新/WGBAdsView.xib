@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WGBAdsView">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bDF-75-g7m" userLabel="1">
+                    <rect key="frame" x="0.0" y="0.0" width="149" height="180"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3rA-cr-S8e" userLabel="4">
+                    <rect key="frame" x="263" y="91" width="111" height="89"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-9k-ofh" userLabel="3">
+                    <rect key="frame" x="151" y="91" width="110" height="89"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-zm-PSX" userLabel="2">
+                    <rect key="frame" x="151" y="0.0" width="223" height="89"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gBr-zm-PSX" firstAttribute="width" secondItem="bDF-75-g7m" secondAttribute="width" multiplier="1.5" id="0sv-6n-VfW"/>
+                <constraint firstItem="bDF-75-g7m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Cz-OQ-zXm"/>
+                <constraint firstItem="BEr-9k-ofh" firstAttribute="leading" secondItem="bDF-75-g7m" secondAttribute="trailing" constant="2" id="5Hm-UW-oqp"/>
+                <constraint firstItem="3rA-cr-S8e" firstAttribute="height" secondItem="BEr-9k-ofh" secondAttribute="height" id="5ae-4n-32W"/>
+                <constraint firstItem="BEr-9k-ofh" firstAttribute="height" secondItem="gBr-zm-PSX" secondAttribute="height" id="6XT-MV-WVv"/>
+                <constraint firstItem="3rA-cr-S8e" firstAttribute="top" secondItem="gBr-zm-PSX" secondAttribute="bottom" constant="2" id="96V-r9-nS2"/>
+                <constraint firstItem="gBr-zm-PSX" firstAttribute="height" secondItem="bDF-75-g7m" secondAttribute="height" multiplier="0.5" constant="-1" id="IVs-FT-8KE"/>
+                <constraint firstItem="gBr-zm-PSX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PhS-Bf-WkQ"/>
+                <constraint firstItem="BEr-9k-ofh" firstAttribute="width" secondItem="gBr-zm-PSX" secondAttribute="width" multiplier="0.5" constant="-1" id="Rfm-bC-Uvr"/>
+                <constraint firstAttribute="bottom" secondItem="bDF-75-g7m" secondAttribute="bottom" id="SHd-2v-V7I"/>
+                <constraint firstAttribute="bottom" secondItem="3rA-cr-S8e" secondAttribute="bottom" id="ToX-Eo-yIK"/>
+                <constraint firstAttribute="trailing" secondItem="3rA-cr-S8e" secondAttribute="trailing" id="UyX-mv-ziP"/>
+                <constraint firstAttribute="trailing" secondItem="gBr-zm-PSX" secondAttribute="trailing" id="W7H-ck-8a7"/>
+                <constraint firstAttribute="bottom" secondItem="BEr-9k-ofh" secondAttribute="bottom" id="WFW-ga-TYb"/>
+                <constraint firstItem="3rA-cr-S8e" firstAttribute="width" secondItem="BEr-9k-ofh" secondAttribute="width" constant="1" id="aLg-4H-1di"/>
+                <constraint firstItem="gBr-zm-PSX" firstAttribute="leading" secondItem="bDF-75-g7m" secondAttribute="trailing" constant="2" id="gTH-Vo-ddY"/>
+                <constraint firstItem="bDF-75-g7m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lMw-ii-iFx"/>
+                <constraint firstItem="BEr-9k-ofh" firstAttribute="top" secondItem="gBr-zm-PSX" secondAttribute="bottom" constant="2" id="rA7-bn-ove"/>
+                <constraint firstItem="3rA-cr-S8e" firstAttribute="leading" secondItem="BEr-9k-ofh" secondAttribute="trailing" constant="2" id="xu6-HR-X4o"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="gTH-Vo-ddY"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="adImageView1" destination="bDF-75-g7m" id="o10-YU-dbN"/>
+                <outlet property="adImageView2" destination="gBr-zm-PSX" id="Gd1-9Y-kNy"/>
+                <outlet property="adImageView3" destination="BEr-9k-ofh" id="bg6-ye-O8Y"/>
+                <outlet property="adImageView4" destination="3rA-cr-S8e" id="Gey-PR-DEo"/>
+            </connections>
+            <point key="canvasLocation" x="315" y="283"/>
+        </view>
+    </objects>
+</document>
